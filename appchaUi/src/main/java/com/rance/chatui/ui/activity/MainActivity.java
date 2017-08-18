@@ -120,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
                 .bindToVoiceButton(emotionVoice)
                 //显示“按下说话，放开发送”的textview绑定
                 .bindToVoiceText(voiceText)
-                .build();
+                .build();//要会闭包
 
         GlobalOnItemClickManagerUtils globalOnItemClickListener = GlobalOnItemClickManagerUtils.getInstance(this);
         globalOnItemClickListener.attachToEditText(editText);
