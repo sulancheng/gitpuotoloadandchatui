@@ -47,6 +47,12 @@ public class ChatAdapter extends RecyclerArrayAdapter<MessageInfo> {
     }
 
     @Override
+    public void OnBindViewHolder(BaseViewHolder holder, int position) {
+        super.OnBindViewHolder(holder, position);
+        MessageInfo item = getItem(position);//对应位置的消息体。
+    }
+
+    @Override
     public int getViewType(int position) {
         return getAllData().get(position).getType();
     }
