@@ -337,7 +337,7 @@ public class EmotionInputDetector {
         if (softInputHeight == 0) {
             softInputHeight = sp.getInt(SHARE_PREFERENCE_TAG, 787);
         }
-        hideSoftInput();
+        hideSoftInput();//隐藏键盘
         mEmotionLayout.getLayoutParams().height = softInputHeight;
         mEmotionLayout.setVisibility(View.VISIBLE);
     }

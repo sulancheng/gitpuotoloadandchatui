@@ -1,1 +1,1 @@
-include ':app', ':photoupload', ':multi-image-selector', ':ninegridview', ':ningridviewdemo', ':samplephotoview', ':photoview', ':appphotoviewtwo', ':library', ':appchaUi'
+include ':app', ':photoupload', ':multi-image-selector', ':ninegridview', ':ningridviewdemo', ':samplephotoview', ':photoview', ':appphotoviewtwo', ':phototwolibrary', ':appchaUi', ':emojiconmple', ':library'
