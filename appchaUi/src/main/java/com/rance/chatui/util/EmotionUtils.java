@@ -16,7 +16,7 @@ public class EmotionUtils {
      * key-表情文字;
      * value-表情图片资源
      */
-    private static LinkedHashMap<String, Integer> EMPTY_GIF_MAP;
+    public static LinkedHashMap<String, Integer> EMPTY_GIF_MAP;
     public static LinkedHashMap<String, Integer> EMOTION_STATIC_MAP;
 
 

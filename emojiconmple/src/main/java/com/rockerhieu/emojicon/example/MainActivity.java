@@ -52,10 +52,9 @@ public class MainActivity extends AppCompatActivity implements EmojiconGridFragm
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 mEditEmojicon.setUseSystemDefault(b);
                 mTxtEmojicon.setUseSystemDefault(b);
-                setEmojiconFragment(b);
+                setEmojiconFragments(b);
             }
         });
-
         setEmojiconFragment(false);
     }
 
@@ -65,7 +64,14 @@ public class MainActivity extends AppCompatActivity implements EmojiconGridFragm
                 .replace(R.id.emojicons, EmojiconsFragment.newInstance(useSystemDefault))
                 .commit();
     }
+    private void setEmojiconFragments(boolean useSystemDefault) {
+        if(useSystemDefault){
+            findViewById(R.id.emojicons).setVisibility(View.INVISIBLE);
+        }else {
+            findViewById(R.id.emojicons).setVisibility(View.VISIBLE);
+        }
 
+    }
     @Override
     public void onEmojiconClicked(Emojicon emojicon) {
         EmojiconsFragment.input(mEditEmojicon, emojicon);

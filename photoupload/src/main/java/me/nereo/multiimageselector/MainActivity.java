@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
                     e.printStackTrace();
                 }
             }
-            MultiImageSelector selector = MultiImageSelector.create(MainActivity.this);
+            MultiImageSelector selector = MultiImageSelector.create();
             selector.showCamera(showCamera);
             selector.count(maxNum);
             if (mChoiceMode.getCheckedRadioButtonId() == R.id.single) {
