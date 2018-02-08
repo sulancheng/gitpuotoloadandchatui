@@ -2,10 +2,7 @@ package com.example.bm.photoview;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.graphics.Matrix;
-import android.graphics.RectF;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 
 /**
